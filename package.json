@@ -1,0 +1,67 @@
+{
+  "name": "typescript-with-node",
+  "version": "1.0.0",
+  "description": "- First install everything in every package run the command `npm install/ npm i` from your terminal in the root directory. - Then, you can run the platform for development purposes by running `npm run start` in the same directory. - For everything to work correctly you will need to set the keys in '.env' file.",
+  "main": "index.js",
+  "dependencies": {
+    "@types/async": "^3.2.20",
+    "async": "^3.2.4",
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-fileupload": "^1.4.0",
+    "graphql-tools": "^8.3.12",
+    "joi": "^17.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "npm-watch": "^0.11.0",
+    "pg": "^8.10.0",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.29.3",
+    "typescript": "^4.9.5",
+    "uuid": "^9.0.0"
+  },
+  "scripts": {
+    "build": "tsc --jsx react --project . ",
+    "dev": "npm run build && node ./.dist/index.js",
+    "start": "npm-watch dev",
+    "start-production": "node ./.dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "seed": "tsc seed.ts && node seed.js"
+  },
+  "watch": {
+    "dev": {
+      "patterns": [
+        "."
+      ],
+      "quiet": false,
+      "legacyWatch": true,
+      "extensions": "ts, js, tsx"
+    }
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.17",
+    "@types/jsonwebtoken": "^8.5.8",
+    "@types/node": "^20.2.5",
+    "@typescript-eslint/eslint-plugin": "^5.44.0",
+    "@typescript-eslint/parser": "^5.44.0",
+    "eslint": "^8.28.0",
+    "nodemon": "^2.0.16",
+    "sequelize-cli": "^6.6.1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KapilWins/CRUD.git"
+  },
+  "bugs": {
+    "url": "https://github.com/KapilWins/CRUD/issues"
+  },
+  "homepage": "https://github.com/KapilWins/CRUD#readme"
+}

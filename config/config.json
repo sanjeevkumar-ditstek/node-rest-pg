@@ -1,0 +1,11 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "test@1234",
+    "database": "postgres",
+    "host": "localhost",
+    "dialect": "postgres",
+    "seederStorage": "sequelize",
+    "seederStorageTableName": "sequelize_seeders"
+  }
+}
